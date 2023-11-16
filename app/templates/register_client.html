@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Registration</title>
+</head>
+<body>
+<h2>Client Registration</h2>
+<form method="post" action="{% url 'register_client' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
